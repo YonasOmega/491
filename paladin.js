@@ -1,7 +1,7 @@
-class Suspect {
+class Paladin {
 	constructor(game) {
 		this.game = game;
-		this.animator = new Animator(ASSET_MANAGER.getAsset("./Paladin_Walking.png"), 0, 0, 118, 102, 8, 0.25, 6.7, false, true);
+		this.animator = new Animator(ASSET_MANAGER.getAsset("./Paladin_Walking_Centered.png"), 0, 0, 118, 102, 8, 0.25, 6.7, false, true);
 		this.x = 0;
 		this.y = 0;
 		this.speed = 100;
