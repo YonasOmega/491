@@ -1,7 +1,7 @@
 class Paladin {
 	constructor(game) {
 		this.game = game;
-		this.animator = new Animator(ASSET_MANAGER.getAsset("./redamong.png"), 0, 100, 118, 110, 8, 0.25, 6.7, false, true);
+		this.animator = new Animator(ASSET_MANAGER.getAsset("./redamong.png"), 0, 100, 118, 100, 8, 0.25, 6.7, false, true);
 		this.x = 0;
 		this.y = 0;
 		this.speed = 100;
