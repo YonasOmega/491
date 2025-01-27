@@ -2,14 +2,16 @@ const gameEngine = new GameEngine();
 
 const ASSET_MANAGER = new AssetManager();
 
-ASSET_MANAGER.queueDownload("./spritee.PNG")
+ASSET_MANAGER.queueDownload("./suspect.PNG")
+ASSET_MANAGER.queueDownload("./background.jpg");
+
 
 ASSET_MANAGER.downloadAll(() => {
 	const canvas = document.getElementById("gameWorld");
 	const ctx = canvas.getContext("2d");
 	ctx.imageSmoothingEnabled = false;
 
-	gameEngine.addEntity(new Paladin(gameEngine));
+	gameEngine.addEntity(new Sus(gameEngine));
 
 	gameEngine.init(ctx);
 
